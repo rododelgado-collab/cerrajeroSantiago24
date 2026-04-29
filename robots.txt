@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /favicon/
+
+Sitemap: https://cerrajerosantiago24.cl/sitemap.xml
+
+# Delay for aggressive crawlers
+User-agent: AhrefsBot
+User-agent: SemrushBot
+Crawl-delay: 10
