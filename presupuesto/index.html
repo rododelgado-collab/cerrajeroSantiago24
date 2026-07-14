@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuesto de Servicio — Cerrajero Santiago 24</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/svg+xml" href="../logo.svg">
+  <style>
+    :root {
+      --primary: hsl(38, 100%, 55%);
+      --primary-soft: hsla(38, 100%, 55%, 0.14);
+      --bg-dark: hsl(220, 15%, 8%);
+      --bg-card: hsl(220, 12%, 14%);
+      --bg-field: hsl(220, 13%, 11%);
+      --border-glass: rgba(255, 255, 255, 0.08);
+      --text-light: hsl(0, 0%, 98%);
+      --text-gray: hsl(220, 8%, 72%);
+      --paper: #ffffff;
+      --paper-ink: hsl(220, 20%, 12%);
+      --paper-gray: hsl(220, 10%, 42%);
+      --paper-line: hsl(220, 15%, 88%);
+      --whatsapp: #25d366;
+      --font-main: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-dark);
+      background-image: radial-gradient(circle at 50% 0%, hsl(220, 15%, 15%) 0%, var(--bg-dark) 60%);
+      color: var(--text-light);
+      min-height: 100vh;
+      padding: 24px 16px 60px;
+    }
+    .wrap { max-width: 1060px; margin: 0 auto; }
+
+    header.tool-head { margin-bottom: 26px; }
+    .brand { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.01em; }
+    .brand .hl { color: var(--primary); }
+    .tool-head p { color: var(--text-gray); font-size: 0.92rem; margin-top: 4px; }
+    .logo-row { display: flex; align-items: center; gap: 10px; }
+    .logo-row img { width: 36px; height: 36px; }
+
+    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+    @media (max-width: 860px) { .cols { grid-template-columns: 1fr; } }
+
+    /* ---------- FORMULARIO ---------- */
+    .panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: 14px;
+      padding: 22px 20px;
+    }
+    .panel h2 {
+      font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--primary); margin-bottom: 18px;
+    }
+    .field { margin-bottom: 14px; }
+    .field label {
+      display: block; font-size: 0.78rem; color: var(--text-gray);
+      margin-bottom: 5px; letter-spacing: 0.03em;
+    }
+    .field input, .field select, .field textarea {
+      width: 100%;
+      background: var(--bg-field);
+      border: 1px solid var(--border-glass);
+      border-radius: 8px;
+      color: var(--text-light);
+      font: inherit;
+      font-size: 0.95rem;
+      padding: 10px 12px;
+    }
+    .field textarea { resize: vertical; min-height: 64px; }
+    .field input:focus, .field select:focus, .field textarea:focus {
+      outline: 2px solid var(--primary); outline-offset: 1px; border-color: transparent;
+    }
+    .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .divider { border: none; border-top: 1px solid var(--border-glass); margin: 20px 0 18px; }
+
+    .actions { display: flex; gap: 12px; margin-top: 22px; flex-wrap: wrap; }
+    .btn {
+      flex: 1; min-width: 150px;
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      border: none; border-radius: 10px; cursor: pointer;
+      font: inherit; font-weight: 700; font-size: 0.95rem;
+      padding: 13px 18px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
+    .btn-pdf { background: var(--primary); color: var(--bg-dark); }
+    .btn-pdf:hover { box-shadow: 0 8px 18px hsla(38, 100%, 55%, 0.25); }
+    .btn-wsp { background: var(--whatsapp); color: #06250f; }
+    .btn-wsp:hover { box-shadow: 0 8px 18px rgba(37, 211, 102, 0.25); }
+    .btn-new {
+      background: transparent; color: var(--text-gray);
+      border: 1px solid var(--border-glass); flex: 0 1 auto; min-width: 0;
+      font-weight: 600;
+    }
+    .btn-new:hover { color: var(--text-light); border-color: var(--text-gray); }
+
+    /* ---------- PRESUPUESTO (hoja) ---------- */
+    .paper-col h2.preview-label {
+      font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--text-gray); margin-bottom: 12px;
+    }
+    .paper {
+      background: var(--paper);
+      color: var(--paper-ink);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+      font-size: 0.9rem;
+    }
+    .p-head {
+      background: hsl(220, 15%, 10%);
+      color: var(--text-light);
+      padding: 18px 22px;
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+      border-bottom: 3px solid var(--primary);
+    }
+    .p-head .logo-row img { width: 30px; height: 30px; }
+    .p-head .brand { font-size: 1.05rem; }
+    .p-head .sub { font-size: 0.68rem; color: var(--text-gray); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 2px; }
+    .folio { text-align: right; }
+    .folio .n { font-weight: 700; color: var(--primary); font-size: 1rem; font-variant-numeric: tabular-nums; }
+    .folio .d { font-size: 0.72rem; color: var(--text-gray); margin-top: 2px; }
+
+    .p-body { padding: 20px 22px 22px; }
+    .p-title {
+      font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.14em;
+      color: var(--paper-gray); border-bottom: 1px solid var(--paper-line);
+      padding-bottom: 5px; margin: 18px 0 10px;
+    }
+    .p-title:first-child { margin-top: 0; }
+    .kv { display: grid; grid-template-columns: 110px 1fr; gap: 4px 10px; }
+    .kv dt { color: var(--paper-gray); font-size: 0.8rem; }
+    .kv dd { font-weight: 600; }
+    .work-desc { line-height: 1.55; color: var(--paper-ink); white-space: pre-wrap; }
+
+    .total-band {
+      display: flex; justify-content: space-between; align-items: center;
+      background: hsl(40, 60%, 96%);
+      border: 1px solid hsl(40, 55%, 85%);
+      border-radius: 8px;
+      padding: 12px 16px; margin-top: 14px;
+    }
+    .total-band .lbl { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--paper-gray); }
+    .total-band .amt { font-size: 1.35rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+    .total-band .pay { font-size: 0.75rem; color: var(--paper-gray); margin-top: 2px; }
+
+    .seal {
+      display: flex; gap: 12px; align-items: center;
+      border: 1.5px dashed hsl(38, 80%, 60%);
+      background: hsl(43, 100%, 97%);
+      border-radius: 8px;
+      padding: 12px 14px; margin-top: 16px;
+    }
+    .seal svg { flex-shrink: 0; }
+    .seal b { display: block; font-size: 0.85rem; }
+    .seal span { font-size: 0.76rem; color: var(--paper-gray); line-height: 1.4; }
+
+    .p-note {
+      font-size: 0.74rem; color: var(--paper-gray); line-height: 1.5;
+      margin-top: 12px;
+    }
+
+    .p-foot {
+      border-top: 1px solid var(--paper-line);
+      margin-top: 18px; padding-top: 12px;
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px;
+      font-size: 0.72rem; color: var(--paper-gray);
+    }
+
+    /* Impresión: solo la hoja del presupuesto */
+    @media print {
+      body { background: #fff; padding: 0; }
+      .tool-head, .form-col, .preview-label, .actions { display: none !important; }
+      .cols { display: block; }
+      .paper { box-shadow: none; border-radius: 0; }
+      .p-head { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .total-band, .seal { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header class="tool-head">
+    <div class="logo-row">
+      <img src="../logo.svg" alt="Cerrajero Santiago 24">
+      <div class="brand">Cerrajero <span class="hl">Santiago 24</span></div>
+    </div>
+    <p>Presupuesto digital de servicio — uso interno</p>
+  </header>
+
+  <div class="cols">
+    <!-- ============ FORMULARIO ============ -->
+    <section class="panel form-col" aria-label="Datos del presupuesto">
+      <h2>1 · Datos del presupuesto</h2>
+
+      <div class="field">
+        <label for="f-nombre">Nombre del cliente</label>
+        <input id="f-nombre" type="text" placeholder="Ej: María González" autocomplete="off">
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label for="f-fono">Teléfono (WhatsApp)</label>
+          <input id="f-fono" type="tel" placeholder="+56 9 ..." autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="f-comuna">Comuna</label>
+          <input id="f-comuna" type="text" placeholder="Ej: Providencia" autocomplete="off">
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-direccion">Dirección</label>
+        <input id="f-direccion" type="text" placeholder="Calle y número" autocomplete="off">
+      </div>
+
+      <hr class="divider">
+
+      <div class="field">
+        <label for="f-servicio">Servicio a realizar</label>
+        <select id="f-servicio">
+          <option>Apertura de puerta</option>
+          <option>Cambio de chapa</option>
+          <option>Cerrajería automotriz</option>
+          <option>Instalación cerradura de seguridad</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-detalle">Detalle del trabajo cotizado</label>
+        <textarea id="f-detalle" placeholder="Describe el trabajo a realizar, marca de la chapa, materiales incluidos, etc."></textarea>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label for="f-monto">Monto total (CLP)</label>
+          <input id="f-monto" type="text" inputmode="numeric" placeholder="Ej: 55.000">
+        </div>
+        <div class="field">
+          <label for="f-validez">Validez del presupuesto</label>
+          <select id="f-validez">
+            <option>7 días</option>
+            <option selected>15 días</option>
+            <option>30 días</option>
+          </select>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label for="f-garantia">Garantía del trabajo</label>
+          <select id="f-garantia">
+            <option>6 meses</option>
+            <option>3 meses</option>
+            <option selected>30 días</option>
+            <option>Sin garantía</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-tecnico">Técnico</label>
+          <input id="f-tecnico" type="text" placeholder="Nombre del técnico" autocomplete="off">
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-pdf" id="btn-pdf" type="button">📄 Guardar PDF</button>
+        <button class="btn btn-wsp" id="btn-wsp" type="button">💬 Enviar WhatsApp</button>
+        <button class="btn btn-new" id="btn-new" type="button">Nuevo</button>
+      </div>
+    </section>
+
+    <!-- ============ PRESUPUESTO ============ -->
+    <section class="paper-col" aria-label="Vista previa del presupuesto">
+      <h2 class="preview-label">2 · Vista previa del presupuesto</h2>
+      <article class="paper">
+        <div class="p-head">
+          <div class="logo-row">
+            <img src="../logo.svg" alt="">
+            <div>
+              <div class="brand">Cerrajero <span class="hl">Santiago 24</span></div>
+              <div class="sub">Presupuesto de servicio</div>
+            </div>
+          </div>
+          <div class="folio">
+            <div class="n" id="p-folio">—</div>
+            <div class="d" id="p-fecha">—</div>
+          </div>
+        </div>
+        <div class="p-body">
+          <h3 class="p-title">Cliente</h3>
+          <dl class="kv">
+            <dt>Nombre</dt><dd id="p-nombre">—</dd>
+            <dt>Teléfono</dt><dd id="p-fono">—</dd>
+            <dt>Dirección</dt><dd><span id="p-direccion">—</span><span id="p-comuna-sep">, </span><span id="p-comuna">—</span></dd>
+          </dl>
+
+          <h3 class="p-title">Trabajo cotizado</h3>
+          <dl class="kv" style="margin-bottom:8px;">
+            <dt>Servicio</dt><dd id="p-servicio">—</dd>
+            <dt>Técnico</dt><dd id="p-tecnico">—</dd>
+          </dl>
+          <p class="work-desc" id="p-detalle">—</p>
+
+          <div class="total-band">
+            <div>
+              <div class="lbl">Total presupuestado</div>
+              <div class="pay">Válido por <span id="p-validez">15 días</span> desde la fecha de emisión</div>
+            </div>
+            <div class="amt">$<span id="p-monto">0</span></div>
+          </div>
+
+          <div class="seal" id="seal-box">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 2l7 3v6c0 4.4-3 8.4-7 9.5C8 19.4 5 15.4 5 11V5l7-3z" fill="hsl(38,100%,55%)"/>
+              <path d="M8.5 11.5l2.5 2.5 4.5-4.8" stroke="hsl(220,15%,10%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+            <div>
+              <b>Garantía de <span id="p-garantia">30 días</span></b>
+              <span>Al aceptar este presupuesto, el trabajo realizado queda cubierto por garantía sobre defectos de instalación y funcionamiento.</span>
+            </div>
+          </div>
+
+          <p class="p-note">Este documento es una cotización y no constituye boleta ni comprobante de pago. El valor puede variar si en terreno se detectan condiciones distintas a las descritas.</p>
+
+          <div class="p-foot">
+            <span>Cerrajero Santiago 24 · cerrajerosantiago24.cl</span>
+            <span>📞 +56 9 3592 5112 · Atención 24/7</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var FOLIO_KEY = 'cs24_presupuesto_counter';
+  var folioCommitted = false;
+  var folioNum = (parseInt(localStorage.getItem(FOLIO_KEY), 10) || 0) + 1;
+
+  function folioText() {
+    var year = new Date().getFullYear();
+    return 'CS24-P-' + year + '-' + String(folioNum).padStart(4, '0');
+  }
+
+  function commitFolio() {
+    if (folioCommitted) return;
+    localStorage.setItem(FOLIO_KEY, String(folioNum));
+    folioCommitted = true;
+  }
+
+  var map = [
+    ['f-nombre', 'p-nombre'], ['f-fono', 'p-fono'], ['f-comuna', 'p-comuna'],
+    ['f-direccion', 'p-direccion'], ['f-servicio', 'p-servicio'],
+    ['f-detalle', 'p-detalle'], ['f-validez', 'p-validez'],
+    ['f-garantia', 'p-garantia'], ['f-tecnico', 'p-tecnico']
+  ];
+
+  function montoFormateado() {
+    var raw = document.getElementById('f-monto').value.replace(/[^\d]/g, '');
+    return raw ? Number(raw).toLocaleString('es-CL') : '0';
+  }
+
+  function sync() {
+    map.forEach(function (pair) {
+      var el = document.getElementById(pair[0]);
+      document.getElementById(pair[1]).textContent = el.value || '—';
+    });
+    document.getElementById('p-monto').textContent = montoFormateado();
+    var g = document.getElementById('f-garantia').value;
+    document.getElementById('seal-box').style.display = (g === 'Sin garantía') ? 'none' : 'flex';
+    var comuna = document.getElementById('f-comuna').value;
+    document.getElementById('p-comuna-sep').style.display = comuna ? 'inline' : 'none';
+    document.getElementById('p-folio').textContent = folioText();
+  }
+
+  document.querySelectorAll('input, select, textarea').forEach(function (el) {
+    el.addEventListener('input', sync);
+  });
+
+  function pintarFecha() {
+    var hoy = new Date();
+    document.getElementById('p-fecha').textContent =
+      hoy.toLocaleDateString('es-CL', { day: '2-digit', month: 'long', year: 'numeric' }) +
+      ' · ' + hoy.toLocaleTimeString('es-CL', { hour: '2-digit', minute: '2-digit' });
+  }
+
+  // Garantía sugerida según el servicio (editable después)
+  document.getElementById('f-servicio').addEventListener('change', function () {
+    var v = this.value;
+    var g = document.getElementById('f-garantia');
+    if (v === 'Cambio de chapa' || v === 'Instalación cerradura de seguridad') g.value = '6 meses';
+    else if (v === 'Apertura de puerta' || v === 'Cerrajería automotriz') g.value = '30 días';
+    sync();
+  });
+
+  document.getElementById('btn-pdf').addEventListener('click', function () {
+    commitFolio();
+    window.print();
+  });
+
+  document.getElementById('btn-wsp').addEventListener('click', function () {
+    commitFolio();
+    var digits = document.getElementById('f-fono').value.replace(/\D/g, '');
+    if (digits.length === 9 && digits.charAt(0) === '9') digits = '56' + digits;
+    var texto =
+      '📋 *PRESUPUESTO DE SERVICIO*\n' +
+      'Folio: ' + folioText() + '\n' +
+      'Fecha: ' + new Date().toLocaleDateString('es-CL') + '\n\n' +
+      '🔧 Servicio: ' + document.getElementById('f-servicio').value + '\n' +
+      (document.getElementById('f-detalle').value ? 'Detalle: ' + document.getElementById('f-detalle').value + '\n' : '') +
+      '💰 Total: $' + montoFormateado() + '\n' +
+      '⏳ Válido por: ' + document.getElementById('f-validez').value + '\n' +
+      '🛡️ Garantía: ' + document.getElementById('f-garantia').value + '\n\n' +
+      '_Cerrajero Santiago 24 · +56 9 3592 5112_\n' +
+      'cerrajerosantiago24.cl';
+    var url = digits
+      ? 'https://wa.me/' + digits + '?text=' + encodeURIComponent(texto)
+      : 'https://wa.me/?text=' + encodeURIComponent(texto);
+    window.open(url, '_blank', 'noopener');
+  });
+
+  document.getElementById('btn-new').addEventListener('click', function () {
+    if (!confirm('¿Limpiar el formulario y comenzar un presupuesto nuevo?')) return;
+    document.querySelectorAll('input, textarea').forEach(function (el) { el.value = ''; });
+    document.getElementById('f-servicio').selectedIndex = 0;
+    document.getElementById('f-validez').value = '15 días';
+    document.getElementById('f-garantia').value = '30 días';
+    folioNum = (parseInt(localStorage.getItem(FOLIO_KEY), 10) || 0) + 1;
+    folioCommitted = false;
+    pintarFecha();
+    sync();
+  });
+
+  pintarFecha();
+  sync();
+})();
+</script>
+</body>
+</html>

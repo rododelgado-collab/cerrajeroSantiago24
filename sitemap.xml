@@ -1,93 +1,322 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página principal -->
   <url>
     <loc>https://cerrajerosantiago24.cl/</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Páginas de servicios -->
   <url>
-    <loc>https://cerrajerosantiago24.cl/#nosotros</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://cerrajerosantiago24.cl/apertura-puertas/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajeria-automotriz/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cambio-chapas/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Páginas por comuna -->
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-providencia/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cerrajerosantiago24.cl/#servicios</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-las-condes/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cerrajerosantiago24.cl/#cobertura</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-nunoa/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cerrajerosantiago24.cl/#testimonios</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-maipu/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-la-florida/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-vitacura/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-san-miguel/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-lo-barnechea/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-puente-alto/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-estacion-central/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-penalolen/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-la-reina/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-san-bernardo/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-recoleta/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contacto -->
+  <url>
+    <loc>https://cerrajerosantiago24.cl/contacto/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://cerrajerosantiago24.cl/#faq</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
+
+  <!-- Blog -->
   <url>
     <loc>https://cerrajerosantiago24.cl/blog/</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/blog/cerrajero-para-empresas-santiago.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/blog/llaves-transponder-chip-auto-santiago.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/blog/seguridad-departamentos-edificios-santiago.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/blog/candados-alta-seguridad-chile.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/blog/checklist-seguridad-hogar-santiago.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/blog/cerrajero-certificado-vs-no-certificado.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/blog/como-abrir-auto-sin-llave.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/blog/mejores-marcas-chapas-chile.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/blog/cuanto-cuesta-cerrajero-santiago.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/blog/que-hacer-encerrado-casa-santiago.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cerrajerosantiago24.cl/blog/guia-proteger-hogar.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cerrajerosantiago24.cl/blog/tipos-cerraduras.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cerrajerosantiago24.cl/blog/que-hacer-pierdes-llaves.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cerrajerosantiago24.cl/blog/cambio-chapas-guia.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cerrajerosantiago24.cl/blog/seguridad-departamentos.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+
+  <url>
+    <loc>https://cerrajerosantiago24.cl/sobre-nosotros/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cambio-chapa-yale/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-condominio/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/instalacion-cerradura-seguridad/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-pudahuel/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-cerrillos/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-el-bosque/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-san-ramon/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-quilicura/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-la-pintana/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-renca/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/cerrajero-conchali/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cerrajerosantiago24.cl/blog/cerrajero-confianza-evitar-estafas-santiago.html</loc>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://cerrajerosantiago24.cl/apertura-puertas/</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://cerrajerosantiago24.cl/blog/que-hacer-si-roban-llaves-santiago.html</loc>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://cerrajerosantiago24.cl/cerrajeria-automotriz/</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://cerrajerosantiago24.cl/blog/cerraduras-inteligentes-chile-guia-2026.html</loc>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://cerrajerosantiago24.cl/cambio-chapas/</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://cerrajerosantiago24.cl/blog/como-reforzar-puerta-casa-santiago.html</loc>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 </urlset>
