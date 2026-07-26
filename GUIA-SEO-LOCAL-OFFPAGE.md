@@ -1,79 +1,171 @@
-# Guía SEO Local Off-Page — Cerrajero Santiago 24
+# Plan de Posicionamiento — Cerrajero Santiago 24
 
-Estas son las acciones que **no dependen del código** y que en SEO local pesan tanto o más que el sitio web. Google posiciona el "pack local" (mapa con 3 resultados) principalmente por: proximidad, relevancia y prominencia (reseñas + menciones).
+**Estado al 26-07-2026:** el trabajo técnico del sitio está terminado (SEO on-page 9.5/10).
+Lo que falta para subir en Google **no se programa**: son reseñas, actividad en tu ficha y menciones de otros sitios.
 
-**Datos NAP oficiales** (usar SIEMPRE idénticos en todas partes):
+Esta guía es tu plan de acción. Está ordenada por impacto real, no por dificultad.
+
+---
+
+## Datos oficiales (NAP) — usar SIEMPRE idénticos
+
+Cualquier variación (un "24hrs" en vez de "24", un teléfono con otro formato)
+debilita la señal que Google usa para confirmar que eres el mismo negocio en todas partes.
+
 - **Nombre:** Cerrajero Santiago 24
 - **Teléfono:** +56 9 3592 5112
 - **Web:** https://cerrajerosantiago24.cl
 - **Ficha Google:** https://g.page/r/CaJsRHjYM-tiEBM
+- **Enlace para pedir reseñas:** https://g.page/r/CaJsRHjYM-tiEBM/review
 
 ---
 
-## 1. Google Business Profile (la palanca más fuerte)
+# NIVEL 1 — Lo que más mueve la aguja
 
-### Configuración (una vez)
-- [ ] Categoría principal: **Cerrajería** / Cerrajero. Categorías secundarias: "Servicio de cerrajería de emergencia", "Cerrajero de automóviles" si están disponibles.
-- [ ] En "Servicios", crear un servicio por cada línea con precio "desde": Apertura de puertas ($35.000), Cambio de chapas ($55.000), Apertura de autos ($45.000), Instalación cerradura de seguridad, Llaves con chip/transponder.
-- [ ] En la descripción del perfil, incluir naturalmente: "cerrajero en Santiago 24 horas", comunas prioritarias (Las Condes, Providencia, Vitacura, Ñuñoa) y "llegada en 15-20 minutos".
-- [ ] Definir el **área de servicio** con las comunas que atiendes (coincide con las 23 páginas del sitio).
-- [ ] Completar horario 24 horas (ya está ✓), atributos (pago con tarjeta, etc.) y el enlace al sitio web.
-- [ ] Agregar perfiles de redes sociales al GBP (Google ya te lo sugiere en el panel). Si creas Instagram/Facebook, avísame para agregarlos también al `sameAs` del sitio.
+## 1.1 Reseñas: de 21 a 50 (el factor nº1 del mapa)
 
-### Rutina semanal (15 minutos)
-- [ ] **Subir 2-3 fotos reales de trabajos** con la ubicación activada en el teléfono (Google lee los metadatos de ubicación). Fotos en Las Condes/Providencia/Vitacura valen oro para rankear ahí.
-- [ ] **Publicar 1 "Novedad"** en GBP: un trabajo realizado, un consejo, una promo. Los perfiles activos rankean mejor.
-- [ ] **Responder TODAS las reseñas** en menos de 24h, mencionando comuna y servicio en la respuesta: *"¡Gracias Carmen! Un gusto ayudarte con la apertura de tu auto en Ñuñoa."* — eso inyecta keywords locales a tu ficha.
+Tus competidores tienen entre 100 y 400 reseñas. Es la brecha más grande que tienes.
 
-## 2. Estrategia de reseñas (prominencia)
+**Rutina por cada servicio terminado:**
 
-La meta: pasar de 21 a 50+ reseñas manteniendo 5.0. El volumen y la frescura de reseñas es de los factores nº1 del pack local.
+Manda este mensaje por WhatsApp el mismo día, cuando el cliente todavía siente el alivio:
 
-- [ ] Después de cada servicio exitoso, enviar por WhatsApp el enlace directo: `https://g.page/r/CaJsRHjYM-tiEBM/review` (el sitio ya lo muestra en cada página ✓).
-- [ ] Pedir al cliente que **mencione la comuna y el servicio** en su reseña: *"Me abrió la puerta en Las Condes en 15 minutos"* posiciona esa keyword en tu ficha.
-- [ ] Mensaje sugerido post-servicio: *"¡Gracias por confiar en Cerrajero Santiago 24! Si quedaste conforme, ¿me ayudas con una reseña? Solo toma 1 minuto: [enlace]. Si puedes mencionar tu comuna, mejor aún 🙌"*
-- [ ] Nunca comprar reseñas ni pedirlas en lote el mismo día (Google detecta picos y puede filtrarlas). Ritmo natural: 2-4 por semana.
+> ¡Gracias por confiar en Cerrajero Santiago 24! Si quedaste conforme, ¿me ayudas con
+> una reseña? Toma 1 minuto: https://g.page/r/CaJsRHjYM-tiEBM/review
+> Si puedes mencionar tu comuna y el servicio, me ayuda muchísimo 🙌
 
-## 3. Citas locales / directorios (NAP consistente)
+**Por qué pedir que mencionen la comuna:** cuando alguien escribe "me abrió la puerta en
+Las Condes en 15 minutos", esa frase queda en tu ficha y Google la asocia a búsquedas de
+esa comuna. Es la forma más barata de reforzar tu presencia local.
 
-Registrar el negocio con los datos NAP **exactamente iguales** en:
+**Ritmo objetivo:** 2 a 4 reseñas nuevas por semana. Nunca pidas 20 el mismo día — los
+picos artificiales se filtran.
 
-| Directorio | URL | Prioridad |
+- [ ] Semana 1: llegar a 25 reseñas
+- [ ] Mes 1: llegar a 30
+- [ ] Mes 3: llegar a 45-50
+
+**Nunca:** comprar reseñas, pedirlas a familiares que no fueron clientes, ni ofrecer
+descuento a cambio. Google detecta patrones y puede suspender la ficha.
+
+## 1.2 Responder TODAS las reseñas en menos de 24 horas
+
+Cada respuesta es contenido nuevo en tu ficha. Menciona comuna y servicio:
+
+> ¡Gracias Carmen! Un gusto ayudarte con la apertura de tu auto en Ñuñoa.
+> Cualquier cosa que necesites, ahí estamos las 24 horas.
+
+**Si llega una reseña negativa:** respóndela con calma, sin discutir, ofreciendo
+solucionar. Un negocio con 4.9 y respuestas profesionales genera más confianza que
+uno con 5.0 perfecto y sin interacción.
+
+## 1.3 Publicar en tu ficha de Google (1 vez por semana)
+
+En tu panel de Google Business Profile → "Publicaciones" o "Novedades".
+Los perfiles activos rankean mejor que los abandonados.
+
+Ideas que puedes rotar:
+- Un trabajo hecho esa semana ("Cambio de cerradura Mul-T-Lock en Vitacura")
+- Un consejo corto de seguridad
+- Recordatorio de servicio 24 horas en fin de semana largo
+- Foto de una chapa antes/después
+
+## 1.4 Fotos geolocalizadas (2-3 por semana)
+
+Sube fotos **tomadas con tu teléfono con la ubicación activada**. Google lee esos datos
+y refuerza tu presencia en esa zona. Fotos tomadas en Las Condes, Providencia y Vitacura
+valen especialmente porque son tus comunas objetivo.
+
+Qué fotografiar: la puerta terminada (sin mostrar número ni datos del cliente), tu
+herramienta en uso, la cerradura nueva instalada, tu vehículo de trabajo.
+
+---
+
+# NIVEL 2 — Autoridad del dominio (mes 1 a 3)
+
+Google necesita ver que otros sitios te mencionan. Hoy tienes prácticamente cero enlaces.
+
+## 2.1 Directorios chilenos — 1 por semana
+
+Registra el negocio con el NAP **exactamente igual** al de arriba:
+
+| Directorio | Prioridad | Notas |
 |---|---|---|
-| Yapo.cl (servicios) | yapo.cl | Alta |
-| Habitissimo Chile | habitissimo.cl | Alta |
-| Cronoshare Chile | cronoshare.cl | Alta |
-| Amarillas de Chile | amarillas.cl | Media |
-| Páginas Blancas / guías locales | — | Media |
-| Facebook Business | facebook.com | Alta (además da perfil para sameAs) |
-| Instagram del negocio | instagram.com | Media (fotos de trabajos = confianza) |
-| Bing Places | bingplaces.com | Baja (gratis, 10 min) |
+| Yapo.cl (servicios) | Alta | Mucho tráfico local en Chile |
+| Habitissimo Chile | Alta | Específico de servicios para el hogar |
+| Cronoshare Chile | Alta | Genera contactos además del enlace |
+| Facebook Business | Alta | Además sirve para el `sameAs` del sitio |
+| Instagram del negocio | Media | Fotos de trabajos = prueba social |
+| Amarillas.cl | Media | Directorio tradicional |
+| Bing Places | Baja | Gratis, 10 minutos, cubre Bing/Copilot |
 
-Cada ficha debe enlazar a `https://cerrajerosantiago24.cl` — cada una es un backlink + señal de entidad.
+**Cuando crees Instagram o Facebook, avísame:** los agrego al código del sitio para que
+Google confirme que todos esos perfiles son el mismo negocio.
 
-## 4. Search Console (rutina mensual)
+## 2.2 Enlaces desde clientes reales (el más valioso)
 
-- [ ] **Ahora:** reenviar el sitemap en GSC (Indexación → Sitemaps → `https://cerrajerosantiago24.cl/sitemap.xml`) para que Google recoja los cambios de hoy.
-- [ ] Pedir indexación manual (Inspección de URL) de la home y las 4 páginas de zona oriente actualizadas.
-- [ ] Revisar mensualmente "Rendimiento": qué consultas ya te muestran (impresiones) pero con CTR bajo → esas son las oportunidades para mejorar títulos.
-- [ ] Revisar "Indexación de páginas": que las 23 comunas + blog estén indexadas.
+- **Administradores de edificios y condominios** donde ya trabajaste: muchos tienen sitio
+  web o boletín con proveedores recomendados. Pídeles que te incluyan.
+- **Corredoras de propiedades**: cuando arriendan o venden, el cliente necesita cambiar
+  chapas. Ofrece convenio y pide que te enlacen desde su web.
+- **Empresas a las que atendiste**: si tienen sección de proveedores, pide la mención.
 
-## 5. Backlinks locales (mediano plazo)
+Un solo enlace desde un sitio chileno real vale más que diez directorios genéricos.
 
-- Contactar administradores de edificios/condominios donde ya trabajaste: muchos tienen páginas o boletines donde recomiendan proveedores.
-- Ofrecer un artículo invitado a blogs chilenos de hogar/inmobiliarias (ej. portales de corretaje) enlazando tu guía de cerraduras.
-- Grupos de Facebook de vecinos por comuna (Las Condes, Ñuñoa, Providencia): participar como profesional, sin spam. Las menciones generan búsquedas de marca, otra señal fuerte.
+## 2.3 Grupos de vecinos por comuna
+
+Facebook tiene grupos activos de Las Condes, Ñuñoa, Providencia. Participa **como
+profesional que ayuda**, respondiendo dudas de seguridad, sin spamear tu web. Cuando
+alguien pregunte por un cerrajero, otros te recomendarán. Esas búsquedas de tu nombre
+en Google son otra señal fuerte de marca.
 
 ---
 
-## Qué se hizo en el sitio (13-07-2026)
+# NIVEL 3 — Seguimiento y ajuste (mensual)
 
-1. Schema `Locksmith` de la home conectado a tu ficha de Google (`sameAs` + `hasMap` + `@id`), con `logo`.
-2. Las 22 páginas de comuna vinculadas a la entidad principal (`parentOrganization`) → Google consolida una sola entidad.
-3. `reviewCount` actualizado de 16 → 21 en todo el sitio.
-4. Meta tags geográficos (`geo.region`, `geo.position`, `ICBM`) en home y 22 comunas.
-5. Enlaces contextuales entre comunas vecinas de zona oriente y desde 6 artículos del blog hacia Las Condes, Providencia, Vitacura y Ñuñoa.
-6. Anchor "cerrajero en Santiago" hacia la home desde páginas de comuna.
-7. `lastmod` del sitemap actualizado a 2026-07-13.
+## 3.1 Search Console — qué mirar cada mes
 
-**Recuerda:** el SEO local tarda 4-8 semanas en reflejar cambios. Lo que más mueve la aguja a corto plazo: reseñas nuevas con mención de comuna + fotos geolocalizadas + publicaciones en GBP.
+Entra a *Rendimiento* y filtra los últimos 28 días:
+
+1. **Consultas con muchas impresiones y pocos clics** → esas páginas aparecen pero no
+   convencen. Su título o descripción necesita mejorar.
+2. **Consultas en posición 5-15** → son las que están más cerca de subir. Reforzar el
+   contenido de esas páginas da resultados rápidos.
+3. **Consultas que no esperabas** → si la gente te busca por algo que no cubres bien,
+   ahí hay una página o un artículo por escribir.
+
+Anota las 3 consultas más prometedoras cada mes. Con esos datos podemos afinar el sitio.
+
+## 3.2 Google Business Profile — panel de rendimiento
+
+Mira cuántas personas pidieron indicaciones, llamaron o visitaron la web. Si las
+llamadas suben mes a mes, el trabajo está funcionando aunque la posición no cambie aún.
+
+---
+
+# Calendario realista
+
+| Cuándo | Qué esperar |
+|---|---|
+| Semanas 1-2 | Google reindexa el sitio. Sin cambios visibles de posición todavía. |
+| Semanas 3-6 | Empiezan a subir las **impresiones** en Search Console. Primera señal real. |
+| Meses 2-4 | Movimiento de posiciones, primero en las comunas de zona oriente. |
+| Meses 4-8 | Con 50+ reseñas y enlaces, competencia real por el pack local. |
+
+**Lo más importante:** la constancia gana. Cuatro reseñas por semana durante tres meses
+supera cualquier optimización técnica que se pueda hacer al código.
+
+---
+
+# Lo que ya está hecho en el sitio (no requiere acción)
+
+- Entidad del negocio conectada a la ficha de Google (`sameAs`, `hasMap`, `@id`).
+- 23 páginas de comuna con contenido único, schema y FAQ propias.
+- Enlazado interno reforzado hacia zona oriente.
+- Meta tags geográficos, sitemap actualizado, canonicals correctos.
+- Rendimiento: 73 KB por página, contenido visible en 380 ms.
+- Seguridad: HTTPS, cabeceras completas, integridad del CDN.
+- Política de privacidad y consentimiento de cookies (Consent Mode v2).
+- Títulos y descripciones dentro de los límites que muestra Google.
+
+**Auditoría SEO on-page: 9.5/10.** El techo actual está en el off-page, no en el código.
