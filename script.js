@@ -179,6 +179,66 @@ document.addEventListener('DOMContentLoaded', () => {
         elfsightObserver.observe(reviewsContainer);
     }
 
+    // --- CONSENTIMIENTO DE COOKIES ---
+    // El estado por defecto (denied) se declara en el <head> de cada pagina,
+    // antes de gtag, para que nada se rastree hasta que el visitante decida.
+    const CONSENT_KEY = 'cs24_consent';
+    const banner = document.getElementById('cookie-banner');
+
+    const readConsent = () => {
+        try {
+            return localStorage.getItem(CONSENT_KEY);
+        } catch (e) {
+            return null; // modo privado o almacenamiento bloqueado
+        }
+    };
+
+    const applyConsent = (granted) => {
+        if (typeof gtag !== 'function') return;
+        const value = granted ? 'granted' : 'denied';
+        gtag('consent', 'update', {
+            analytics_storage: value,
+            ad_storage: value,
+            ad_user_data: value,
+            ad_personalization: value
+        });
+    };
+
+    const saveConsent = (granted) => {
+        try {
+            localStorage.setItem(CONSENT_KEY, granted ? 'granted' : 'denied');
+        } catch (e) {
+            // Sin almacenamiento no se persiste: se vuelve a preguntar en la proxima visita.
+        }
+        applyConsent(granted);
+        if (banner) banner.classList.remove('is-visible');
+    };
+
+    if (banner) {
+        const saved = readConsent();
+        if (saved === 'granted') {
+            applyConsent(true);
+        } else if (saved !== 'denied') {
+            // Sin decision previa: mostrar el aviso sin competir con el LCP.
+            setTimeout(() => banner.classList.add('is-visible'), 900);
+        }
+
+        const acceptBtn = banner.querySelector('[data-cookie-accept]');
+        const rejectBtn = banner.querySelector('[data-cookie-reject]');
+        if (acceptBtn) acceptBtn.addEventListener('click', () => saveConsent(true));
+        if (rejectBtn) rejectBtn.addEventListener('click', () => saveConsent(false));
+    }
+
+    document.querySelectorAll('[data-cookie-settings]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (banner) {
+                banner.classList.add('is-visible');
+                banner.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+            }
+        });
+    });
+
     // --- PERFORMANCE MONITORING ---
     if (window.PerformanceObserver) {
         try {

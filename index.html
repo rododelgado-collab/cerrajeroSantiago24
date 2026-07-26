@@ -53,7 +53,7 @@
 
     <link rel="preload" as="image" href="cerrajerourgencias.webp" fetchpriority="high">
 
-    <link rel="stylesheet" href="style.css?v=1.4">
+    <link rel="stylesheet" href="style.css?v=1.5">
 
     <script type="application/ld+json">
     {
@@ -331,6 +331,11 @@
     }
     </script>
 
+    <script>
+    // Consent Mode v2: nada se rastrea hasta que el visitante acepta.
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+    gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17761381105"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -1033,6 +1038,8 @@
                     <a href="sobre-nosotros/">Nosotros</a>
                     <a href="contacto/">Contacto</a>
                     <a href="sitemap.xml">Sitemap</a>
+                    <a href="privacidad/">Privacidad</a>
+                    <button type="button" class="cookie-settings-link" data-cookie-settings>Configurar cookies</button>
                 </div>
             </div>
         </div>
@@ -1049,7 +1056,14 @@
         class="desktop-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
-    <script src="script.js?v=1.2" defer></script>
+    <script src="script.js?v=1.3" defer></script>
+    <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Aviso de cookies">
+        <p><strong>Usamos cookies para medir cómo se usa el sitio.</strong> Son opcionales: puedes rechazarlas y seguir navegando, llamando y pidiendo presupuesto con normalidad. <a href="privacidad/">Más información</a>.</p>
+        <div class="cookie-actions">
+            <button type="button" class="btn btn-primary" data-cookie-accept>Aceptar</button>
+            <button type="button" class="btn btn-cookie-reject" data-cookie-reject>Rechazar</button>
+        </div>
+    </div>
 </body>
 
 </html>
