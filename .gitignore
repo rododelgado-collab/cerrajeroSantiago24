@@ -1,0 +1,11 @@
+# Archivos fuente / respaldos que no deben publicarse en el sitio
+favicon.zip
+yocerrajero.png
+
+# Configuracion local de Claude Code
+.claude/settings.local.json
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store

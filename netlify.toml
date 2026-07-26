@@ -9,12 +9,16 @@
   [headers.values]
     Content-Type = "text/plain; charset=utf-8"
 
+# Aplica a todas las rutas, incluidas las servidas como directorio ("/", "/cerrajero-las-condes/").
+# Un patron "/*.html" solo cubre URLs terminadas en .html y dejaba la home y las comunas sin headers.
 [[headers]]
-  for = "/*.html"
+  for = "/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+    Content-Security-Policy = "base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; upgrade-insecure-requests"
 
 [[headers]]
   for = "/*.css"
