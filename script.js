@@ -115,17 +115,40 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // --- TRACKING AVANZADO DE WHATSAPP (Google Ads) ---
-    // Detecta Clics en cualquier botón de WhatsApp
-    document.addEventListener('click', (e) => {
-        const link = e.target.closest('a[href*="wa.me"]');
+    // --- MEDICION DE CONTACTOS (llamadas y WhatsApp) ---
+    // Registra que canal usa el cliente y desde que boton, para saber cual
+    // convierte mejor en cada pagina.
+    const CONVERSIONES_ADS = {
+        whatsapp: 'AW-17761381105/OAKlCOms6McbEPHVpJVC',
+        llamada: null // Pendiente: crear la accion de conversion de llamadas en Google Ads
+    };
 
-        if (link) {
-            if (typeof gtag === 'function') {
-                gtag('event', 'conversion', {
-                    'send_to': 'AW-17761381105/OAKlCOms6McbEPHVpJVC'
-                });
-            }
+    const ubicacionDelBoton = (link) => {
+        if (link.closest('.mobile-sticky-footer')) return 'barra_movil';
+        if (link.closest('.header')) return 'cabecera';
+        if (link.closest('.hero')) return 'hero';
+        if (link.closest('footer')) return 'pie';
+        if (link.closest('.desktop-whatsapp')) return 'boton_flotante';
+        return 'contenido';
+    };
+
+    document.addEventListener('click', (e) => {
+        const link = e.target.closest('a[href^="tel:"], a[href*="wa.me"]');
+        if (!link || typeof gtag !== 'function') return;
+
+        const canal = link.getAttribute('href').startsWith('tel:') ? 'llamada' : 'whatsapp';
+
+        // Evento para Google Analytics: canal, boton y pagina de origen
+        gtag('event', 'contacto', {
+            canal: canal,
+            ubicacion_boton: ubicacionDelBoton(link),
+            pagina: window.location.pathname
+        });
+
+        // Conversion para Google Ads, cuando esta configurada
+        const sendTo = CONVERSIONES_ADS[canal];
+        if (sendTo) {
+            gtag('event', 'conversion', { send_to: sendTo });
         }
     });
 
