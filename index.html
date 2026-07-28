@@ -932,7 +932,9 @@
             <h2 class="section-title">Contáctanos</h2>
             <p class="section-subtitle">Completa el formulario y te respondemos por WhatsApp en segundos. Para urgencias, llama directamente.</p>
 
-            <form class="contact-form-native" id="contactForm" novalidate>
+            <!-- data-clarity-mask: impide que las grabaciones de sesion capturen
+                 el nombre, telefono o mensaje que escribe el cliente. -->
+            <form class="contact-form-native" id="contactForm" novalidate data-clarity-mask="true">
                 <input type="text" id="cf-nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
                 <input type="tel" id="cf-telefono" name="telefono" placeholder="Tu teléfono (opcional)" autocomplete="tel">
                 <select id="cf-servicio" name="servicio" aria-label="Tipo de servicio">
@@ -1056,7 +1058,7 @@
         class="desktop-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
-    <script src="script.js?v=1.4" defer></script>
+    <script src="script.js?v=1.5" defer></script>
     <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Aviso de cookies">
         <p><strong>Usamos cookies para medir cómo se usa el sitio.</strong> Son opcionales: puedes rechazarlas y seguir navegando, llamando y pidiendo presupuesto con normalidad. <a href="privacidad/">Más información</a>.</p>
         <div class="cookie-actions">

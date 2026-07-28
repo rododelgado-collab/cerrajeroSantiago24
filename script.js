@@ -216,7 +216,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // Microsoft Clarity (mapas de calor y grabacion de sesiones).
+    // Solo se carga si el visitante acepta, y cuando el navegador esta ocioso,
+    // para no competir con el renderizado de la pagina.
+    const CLARITY_ID = 'xtpl092spp';
+    let clarityPedido = false;
+
+    const cargarClarity = () => {
+        if (clarityPedido || !CLARITY_ID) return;
+        clarityPedido = true;
+        const inyectar = () => {
+            (function (c, l, a, r, i, t, y) {
+                c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+                t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+            })(window, document, 'clarity', 'script', CLARITY_ID);
+        };
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(inyectar, { timeout: 3000 });
+        } else {
+            setTimeout(inyectar, 1500);
+        }
+    };
+
     const applyConsent = (granted) => {
+        if (granted) cargarClarity();
         if (typeof gtag !== 'function') return;
         const value = granted ? 'granted' : 'denied';
         gtag('consent', 'update', {
